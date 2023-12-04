@@ -1,0 +1,46 @@
+body{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 30% 65% 5%;
+}
+header{
+    border: 3px solid red;
+    border-radius: 5px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.bilder{
+    border: 3px solid red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(./snow_winter_trees.jpg);
+}
+nav{
+    border: 3px solid red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    border: 3px solid red;
+    border-radius: 5px;
+    flex-direction: row;
+}
+aside{
+    border: 3px solid red;
+    border-radius: 5px;
+}
+footer{
+    border: 3px solid red;
+    border-radius: 5px;
+    justify-content: center;
+}
+img{
+    max-width: 200px;
+}
+#gran{
+    min-height: 345px;
+    max-width: 125px;
+}
