@@ -1,46 +1,98 @@
 body{
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 30% 65% 5%;
+    grid-template-rows: 200px 500px 35px;
 }
 header{
     border: 3px solid red;
     border-radius: 5px;
     grid-column-start: 1;
     grid-column-end: 4;
+    margin: 2px;
+    background-image: url(./snow_winter_trees.jpg);
+    text-align: center;
+    background-size: contain;
 }
 .bilder{
     border: 3px solid red;
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: url(./snow_winter_trees.jpg);
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2px;
 }
 nav{
     border: 3px solid red;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    padding: 3px;
+    margin: 2px;
+    text-align: center;
 }
 main{
     border: 3px solid red;
     border-radius: 5px;
     flex-direction: row;
+    padding: 3px;
+    margin: 2px;
 }
 aside{
     border: 3px solid red;
     border-radius: 5px;
+    margin: 2px;
+    min-height: 475px;
+    max-height: 480px;
 }
 footer{
     border: 3px solid red;
     border-radius: 5px;
-    justify-content: center;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 2px;
 }
 img{
     max-width: 200px;
 }
 #gran{
-    min-height: 345px;
-    max-width: 125px;
+    min-height: 475px;
+    max-width: 180px;
+}
+.BiggE{
+    border: 3px solid red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 5px;
+}
+#top{
+    border: 3px solid black;
+    border-radius: 5px;
+    max-height: 50px;
+    margin: 3px;
+}
+@media screen and (max-width:640px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .bilder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px){
+    aside{
+        display: none;
+    }
 }
